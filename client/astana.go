@@ -93,7 +93,7 @@ func (c *Client) GetAllUsers(limit string) ([]User, error) {
 
 func addHeaders(r *http.Request, limit string) {
 	// Bearer to be added as .env
-	r.Header.Add("authorization", "Bearer 2/1207408404715783/1207408322162260:faebb040c25defdd82b1f7de5dc9a7ef")
+	r.Header.Add("authorization", "Bearer <>")
 	r.Header.Add("content-type", "application/json")
 	q := r.URL.Query()
 	q.Add("limit", limit)
